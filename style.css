@@ -3,6 +3,7 @@
      --nav-color: #0d5179;
      --bg-color: #e8f3f1;
      --black:#52b1ec;
+     --card-color:rgb(153, 153, 245);
 }
 *{
     margin:0;
@@ -22,6 +23,40 @@
 body{
     background-color: var(--bg-color);
 }
+section{
+    padding: 2rem,70%;
+}
+.btn {
+  background-color: var(--nav-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: #000;
+}
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #222;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 2px 2px 0 #e32675; /* optional shadow */
+    padding: 1rem 0;
+}
+
+.title span {
+    color: #000000; /* Make CAKES pop */
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+
 .header{
     background-color: var(--nav-color);
     display: flex;
@@ -32,10 +67,12 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    /*z-index: 1000;*/
+    height:16vh;
+    width: 100%;
+    z-index: 999;
 }
 .header .logo img{
-    height: 6rem;
+    height: 7rem;
     border-radius: 75%;
 }
 .header .navbar a {
@@ -100,4 +137,121 @@ body{
     color: var(--black);
      
 }
+.home {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 12vh;
+    min-height: 84vh;
+    margin-top: 16vh;
+    background-color: #52b1ec;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    display: flex;
+  flex-direction: row; /* or column, depending on layout */
+  align-items: center;
+  justify-content: space-between;
+}
+.home .hero{
+    width: 30rem;
+    margin-bottom: 10px;
+    padding-top: 0 rem;
+}
+.hero-text {
+  text-align: left;
+  text-align: start;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.home .hero h3{
+    font-size: 4rem;
+    padding-top: 0%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fefbfc;
+}
+.home .hero p{
+    font-size: 1rem;
+    font-weight:lighter;
+    line-height: 2.8rem;
+    padding: 1rm 0;
+    color: #faf9f9;
+}
+/*cake section*/
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1.5rem;    
+    
+}
+.cakes .wrapper .cake-card {
+    background-color: #5992bd;
+    padding: 1  rem;
+    padding-top: 2rem;
+    text-align: center;
+    transform-origin: top center;
+}
+.cakes .wrapper .cake-card:hover{
+    transform: scaleY(1.1);
+    background-color: #9ad3f4;
+}
+.cakes .wrapper .cake-card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cakes .wrapper .cake-card h3{
+    color: #fff;
+    font-size: 1rem;
+    
+}
+.cakes .wrapper .cake-card .price{
+    color: #fff;
+    font-size: 1rem;
+   
+}
+
+
+/*cheesecake*/
+.wrapperc{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.4em;rem;    
+    
+}
+.cheesecakes .wrapperc .cheese-card {
+    background-color: #5992bd;
+    padding: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    transform-origin: top center;
+}
+.cheesecakes .wrapperc .cheese-card:hover{
+    transform: scaleY(1.1);
+    background-color: #9ad3f4;
+}
+.cheesecakes .wrapperc .cheese-card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cheesecakes .wrapperc .cheese-card h3{
+    color: #fff;
+    font-size: 1rem;
+    
+}
+.cheesecakes .wrapperc .cheese-card .price{
+    color: #fff;
+    font-size: 1rem;
+   
+}
+
 
