@@ -1,6 +1,8 @@
-const searchIcon= document.querySelector('.iserach-icon');
-const searchForm= document.querySelector('.serach-form');
+const menuIcon =document.querySelector(".meni-icon");
+const navbar= document.querySelector(".navbar");
 
-searchIcon.addEventListener("click", () => {
-    searchForm.classlist.add("active");
-});
+menuIcon.addEventListener("click",() => {
+   navbar.classList.add("active");
+   searchForm.classList.remove("active");
+   
+}
